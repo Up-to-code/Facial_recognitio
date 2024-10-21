@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Detection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        #video {
+            height: auto;
+            width: auto;
+            max-width: 100%;
+            max-height: 100vh;
+        }
+        canvas {
+            height: auto !important;
+            width: auto !important;
+            max-width: 100% !important;
+            max-height: 100vh !important;
+        }
+    </style>
+    <script defer src="face-api.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <video id="video" autoplay muted></video>
+</body>
+</html>
